@@ -16,6 +16,6 @@ interface MoviesService {
         @Query("api_key") apiKey: String,
         @Query("language") lang: String,
         @Query("page") page: Long,
-        @Query("total_result") tResult: Long
+        @Query("total_result") tResult: Int
     ): Flowable<ResponseMovies>
 }
