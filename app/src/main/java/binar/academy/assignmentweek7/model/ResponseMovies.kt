@@ -4,7 +4,6 @@ import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
 import kotlinx.android.parcel.Parcelize
 
-@Parcelize
 data class ResponseMovies(
 
 	@field:SerializedName("id")
@@ -21,4 +20,4 @@ data class ResponseMovies(
 
 	@field:SerializedName("total_results")
 	val totalResults: Int? = null
-) : Parcelable
+)

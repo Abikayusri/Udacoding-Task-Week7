@@ -22,27 +22,28 @@ class MoviesDataSource : PageKeyedDataSource<Long, ResultsItem>() {
         params: LoadInitialParams<Long>,
         callback: LoadInitialCallback<Long, ResultsItem>
     ) {
-        api.getMovies(API_KEY, LANG, 1, params.requestedLoadSize)
+//        api.getMovies(API_KEY, LANG, 1, params.requestedLoadSize)
+        api.getMovies("b64d761def5c00e40e6a36e0032741bf", "en-US", 1, params.requestedLoadSize)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({ response ->
                 response.results?.let {
                     callback.onResult(it, null, 2L)
                 }
-            }, {
+            }, { error ->
 
             })
     }
 
     override fun loadAfter(params: LoadParams<Long>, callback: LoadCallback<Long, ResultsItem>) {
-        api.getMovies(API_KEY, LANG, params.key, params.requestedLoadSize)
+        api.getMovies("b64d761def5c00e40e6a36e0032741bf", "en-US", params.key, params.requestedLoadSize)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({ response ->
                 response.results?.let {
                     callback.onResult(it, params.key + 1L)
                 }
-            }, {
+            }, { error ->
 
             })
     }

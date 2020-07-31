@@ -17,7 +17,7 @@ import java.util.concurrent.Executors
 class MainViewModel: ViewModel() {
 
     var executor: Executor = Executors.newFixedThreadPool(5)
-    var articleData: LiveData<PagedList<ResultsItem>>
+    var moviesData: LiveData<PagedList<ResultsItem>>
 
     init {
         val moviesFactory = MoviesDataFactory()
@@ -27,10 +27,10 @@ class MainViewModel: ViewModel() {
             .setEnablePlaceholders(false)
             .build()
 
-        articleData = LivePagedListBuilder(moviesFactory, pageListConfig).setFetchExecutor(executor).build()
+        moviesData = LivePagedListBuilder(moviesFactory, pageListConfig).setFetchExecutor(executor).build()
     }
 
     fun getMovies() : LiveData<PagedList<ResultsItem>> {
-        return articleData
+        return moviesData
     }
 }
