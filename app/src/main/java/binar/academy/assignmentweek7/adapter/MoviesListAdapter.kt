@@ -83,7 +83,7 @@ class MoviesListAdapter :
                     }
 
                 })
-                .error(R.drawable.ic_launcher_background)
+                .error(R.drawable.ic_image_null)
                 .into(itemView.ivItemPoster)
         }
     }
