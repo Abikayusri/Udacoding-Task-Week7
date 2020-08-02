@@ -1,7 +1,6 @@
-package binar.academy.assignmentweek7.model
+package abika.sinau.assignmentweek7.model
 
 import android.os.Parcelable
-import androidx.recyclerview.widget.DiffUtil
 import com.google.gson.annotations.SerializedName
 import kotlinx.android.parcel.Parcelize
 

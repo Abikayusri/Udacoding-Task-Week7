@@ -1,4 +1,4 @@
-package binar.academy.assignmentweek7
+package abika.sinau.assignmentweek7
 
 import org.junit.Test
 

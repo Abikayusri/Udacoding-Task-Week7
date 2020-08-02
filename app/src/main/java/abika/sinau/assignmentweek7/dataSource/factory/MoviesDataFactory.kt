@@ -1,9 +1,9 @@
-package binar.academy.assignmentweek7.dataSource.factory
+package abika.sinau.assignmentweek7.dataSource.factory
 
 import androidx.lifecycle.MutableLiveData
 import androidx.paging.DataSource
-import binar.academy.assignmentweek7.dataSource.MoviesDataSource
-import binar.academy.assignmentweek7.model.ResultsItem
+import abika.sinau.assignmentweek7.dataSource.MoviesDataSource
+import abika.sinau.assignmentweek7.model.ResultsItem
 
 /**
  * Created by Abika Chairul Yusri

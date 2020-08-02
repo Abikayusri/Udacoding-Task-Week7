@@ -1,6 +1,6 @@
-package binar.academy.assignmentweek7.network
+package abika.sinau.assignmentweek7.network
 
-import binar.academy.assignmentweek7.utils.Utils.BASE_URL
+import abika.sinau.assignmentweek7.utils.Utils.BASE_URL
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

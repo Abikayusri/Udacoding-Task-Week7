@@ -1,6 +1,6 @@
-package binar.academy.assignmentweek7.network
+package abika.sinau.assignmentweek7.network
 
-import binar.academy.assignmentweek7.model.ResponseMovies
+import abika.sinau.assignmentweek7.model.ResponseMovies
 import io.reactivex.rxjava3.core.Flowable
 import retrofit2.http.GET
 import retrofit2.http.Query

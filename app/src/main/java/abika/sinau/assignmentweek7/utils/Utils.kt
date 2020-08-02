@@ -1,4 +1,4 @@
-package binar.academy.assignmentweek7.utils
+package abika.sinau.assignmentweek7.utils
 
 /**
  * Created by Abika Chairul Yusri

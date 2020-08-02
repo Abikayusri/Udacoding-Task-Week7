@@ -1,4 +1,4 @@
-package binar.academy.assignmentweek7.ui.main
+package abika.sinau.assignmentweek7.ui.main
 
 import android.os.Bundle
 import android.view.View
@@ -6,9 +6,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.paging.PagedList
-import binar.academy.assignmentweek7.R
-import binar.academy.assignmentweek7.adapter.MoviesListAdapter
-import binar.academy.assignmentweek7.model.ResultsItem
+import abika.sinau.assignmentweek7.R
+import abika.sinau.assignmentweek7.adapter.MoviesListAdapter
+import abika.sinau.assignmentweek7.model.ResultsItem
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

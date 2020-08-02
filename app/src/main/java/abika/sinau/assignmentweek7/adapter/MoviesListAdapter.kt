@@ -1,4 +1,4 @@
-package binar.academy.assignmentweek7.adapter
+package abika.sinau.assignmentweek7.adapter
 
 import android.graphics.drawable.Drawable
 import android.view.LayoutInflater
@@ -7,9 +7,9 @@ import android.view.ViewGroup
 import androidx.paging.PagedListAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import binar.academy.assignmentweek7.R
-import binar.academy.assignmentweek7.model.ResultsItem
-import binar.academy.assignmentweek7.utils.Utils.IMAGE
+import abika.sinau.assignmentweek7.R
+import abika.sinau.assignmentweek7.model.ResultsItem
+import abika.sinau.assignmentweek7.utils.Utils.IMAGE
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.DataSource
 import com.bumptech.glide.load.engine.GlideException

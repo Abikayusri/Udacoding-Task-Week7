@@ -1,11 +1,11 @@
-package binar.academy.assignmentweek7.ui.main
+package abika.sinau.assignmentweek7.ui.main
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.paging.PagedList
 import androidx.paging.LivePagedListBuilder
-import binar.academy.assignmentweek7.dataSource.factory.MoviesDataFactory
-import binar.academy.assignmentweek7.model.ResultsItem
+import abika.sinau.assignmentweek7.dataSource.factory.MoviesDataFactory
+import abika.sinau.assignmentweek7.model.ResultsItem
 import java.util.concurrent.Executor
 import java.util.concurrent.Executors
 

@@ -1,9 +1,9 @@
-package binar.academy.assignmentweek7.dataSource
+package abika.sinau.assignmentweek7.dataSource
 
 import androidx.paging.PageKeyedDataSource
-import binar.academy.assignmentweek7.model.ResultsItem
-import binar.academy.assignmentweek7.network.ConfigNetwork
-import binar.academy.assignmentweek7.network.MoviesService
+import abika.sinau.assignmentweek7.model.ResultsItem
+import abika.sinau.assignmentweek7.network.ConfigNetwork
+import abika.sinau.assignmentweek7.network.MoviesService
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.schedulers.Schedulers
 
