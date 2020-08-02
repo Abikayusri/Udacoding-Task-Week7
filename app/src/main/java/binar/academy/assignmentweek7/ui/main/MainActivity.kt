@@ -1,7 +1,8 @@
 package binar.academy.assignmentweek7.ui.main
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.paging.PagedList
@@ -12,7 +13,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var viewModel : MainViewModel
+    lateinit var viewModel: MainViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         viewModel = ViewModelProviders.of(this).get(MainViewModel::class.java)
 
         viewModel.getMovies()
+        shimmerFrameLayout.startShimmer()
         attachObserve()
     }
 
@@ -32,9 +34,27 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showData(it: PagedList<ResultsItem>?) {
-
         val adapter = MoviesListAdapter()
         adapter.submitList(it)
-        rvMain.adapter = adapter
+        android.os.Handler().postDelayed(Runnable {
+            shimmerFrameLayout.visibility = View.GONE
+            rvMain.visibility = View.VISIBLE
+            rvMain.adapter = adapter
+        }, 3000)
+    }
+
+    override fun onStart() {
+        shimmerFrameLayout.startShimmer()
+        super.onStart()
+    }
+
+    override fun onResume() {
+        shimmerFrameLayout.startShimmer()
+        super.onResume()
+    }
+
+    override fun onPause() {
+        shimmerFrameLayout.stopShimmer()
+        super.onPause()
     }
 }

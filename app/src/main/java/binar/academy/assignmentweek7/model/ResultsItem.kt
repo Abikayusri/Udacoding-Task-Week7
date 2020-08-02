@@ -1,8 +1,11 @@
 package binar.academy.assignmentweek7.model
 
+import android.os.Parcelable
 import androidx.recyclerview.widget.DiffUtil
 import com.google.gson.annotations.SerializedName
+import kotlinx.android.parcel.Parcelize
 
+@Parcelize
 data class ResultsItem(
 
     @field:SerializedName("item_count")
@@ -27,17 +30,5 @@ data class ResultsItem(
     val iso6391: String? = null,
 
     @field:SerializedName("poster_path")
-    val posterPath: String? = null,
-
-    var DIFF_CALLBACK: DiffUtil.ItemCallback<ResultsItem> = object :
-        DiffUtil.ItemCallback<ResultsItem>() {
-        override fun areItemsTheSame(oldItem: ResultsItem, newItem: ResultsItem): Boolean {
-            return oldItem.id == newItem.id
-        }
-
-        override fun areContentsTheSame(oldItem: ResultsItem, newItem: ResultsItem): Boolean {
-            return oldItem == newItem
-        }
-
-    }
-)
+    val posterPath: String? = null
+) : Parcelable

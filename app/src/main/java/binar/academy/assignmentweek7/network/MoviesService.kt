@@ -10,12 +10,13 @@ import retrofit2.http.Query
  * on Friday, 31 July 2020
  * Bismillahirrahmanirrahim
  */
+
+//
 interface MoviesService {
-    @GET("/movie/5/lists")
+    @GET("movie/5/lists")
     fun getMovies(
         @Query("api_key") apiKey: String,
         @Query("language") lang: String,
-        @Query("page") page: Long,
-        @Query("total_result") tResult: Int
+        @Query("page") page: Long
     ): Flowable<ResponseMovies>
 }
